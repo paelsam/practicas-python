@@ -18,3 +18,16 @@ def numeros(*args):
 
 
 # numeros(0,1,2,3,4)
+
+# Tambien podemos pasar como argumentos un diccionario.
+# Lo hacemos añadiendo dos **kwargs
+# (por defecto es asi, pero podemos poner como nombre lo que queramos)
+# Si queremos, podemos pasar ningun argumento
+# La llave o Key debe ir sin comilla, pero si el valor
+
+def listarTerminos(**terminos):
+    for llave, valor in terminos.items():
+        print("{}: {}".format(llave, valor))
+# listarTerminos(IDE="Integred Development Enviroment", PK="Primary Key")
+# listarTerminos(DBMS="Database Management System")
+
