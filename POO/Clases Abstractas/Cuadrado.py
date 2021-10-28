@@ -1,0 +1,18 @@
+# Clase Cuadrado que se hereda de FiguraGeometrica y Color
+from FiguraGeometrica import FiguraGeometrica
+from Color import Color
+
+class Cuadrado(FiguraGeometrica, Color):
+    def __init__(self, alto, ancho, color):
+        FiguraGeometrica.__init__(self, alto, ancho)
+        Color.__init__(self, color)
+    
+    # Definimos el metodo abstracto area de la clase FiguraGeometrica:
+    # Si no lo hacemos, nos dara error porque no esta definido.
+    def area(self):
+        return self._alto * self._ancho
+    
+    def __str__(self):
+        return f"{FiguraGeometrica.__str__(self)}, {Color.__str__(self)}, Area: {self.area()}"
+        
+

@@ -54,10 +54,10 @@ class Bicicleta(Vehiculo):
     def __str__(self):
         return f'Bicicleta[Tipo: {self._tipo}],  {super().__str__()}'
         
-
-vehiculo1 = Vehiculo("Rojo", 3)
-coche1 = Coche("Azul", 4, "120km/h")
-bicicleta1 = Bicicleta("Negro", 2, "Urbana")
-print(vehiculo1)
-print(coche1)
-print(bicicleta1)
+if __name__ == "__main__":
+    vehiculo1 = Vehiculo("Rojo", 3)
+    coche1 = Coche("Azul", 4, "120km/h")
+    bicicleta1 = Bicicleta("Negro", 2, "Urbana")
+    print(vehiculo1)
+    print(coche1)
+    print(bicicleta1)
